@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function login() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "za") {
+   window.location="index.html";}
+   else {
+    alert("Name must be filled out");}
+    
+  
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/2.html" onsubmit="return login()" method="post">
+  Name: <input type="text" name="fname">
+  pass: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+  <script type="text/javascript">
+         
+            function Redirect() {
+               window.location="index.html";
+            }
+         
+      </script>
+      
+   </head>
+   
+   <body>
+      <p>Click the following button, you will be redirected to home page.</p>
+      
+      <form>
+         <input type="button" value="Нэвтрэх" onclick="Redirect();" />
+      </form>
+      
